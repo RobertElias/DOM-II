@@ -89,3 +89,15 @@ const btn = document.querySelectorAll('.content-pick .destination .btn')
         event.preventDefault()
     
     });
+
+//MouseEnter MouseLeave .card-img-top
+const catImage = document.querySelector(".card-img-top")
+
+catImage.addEventListener("mouseenter", () => {
+  catImage.style.transform = "scale(1.2)";
+  catImage.style.transition = "transform 0.3s"
+})
+
+catImage.addEventListener("mouseleave", () => {
+  catImage.style.transform = "scale(1)"
+})
