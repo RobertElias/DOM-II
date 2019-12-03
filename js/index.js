@@ -26,3 +26,10 @@ document.addEventListener('click', ()=>{
     document.querySelector('.logo-heading').innerHTML = "Welcome to THE FUN BUS"
     document.querySelector('.logo-heading').style.color = "red";
 })
+
+// Drag picture off with mouse .intro img
+
+let dragImg = document.querySelector('.intro img');
+dragImg.addEventListener('drag', ()=> {
+    dragImg.style.display = "none";
+})
