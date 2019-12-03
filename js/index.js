@@ -13,4 +13,9 @@ nav.addEventListener("mouseout", ()=>{
     nav.style.backgroundColor = "White";
 })
 
-//
+// Body keydown Enter on keyboard evenlistener
+let keydown = document.querySelector('body');
+keydown.addEventListener('keydown', ()=> {
+    keydown.style.color = "Maroon";
+    keydown.style.backgroundColor = "Silver";
+});
