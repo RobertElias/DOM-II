@@ -62,3 +62,16 @@ function zoom(event){
     let scale = 1;
     const el = document.querySelector('.footer');
     document.onwheel = zoom;
+// resizing .content-destination p element class with mouse over mouse out
+const destinations = document.querySelector('.content-destination p');
+destinations.addEventListener('mouseover', ()=>{
+    destinations.style.transition = '1s';
+    destinations.style.fontSize = '3.5rem';
+    destinations.style.color = 'purple';
+});
+
+destinations.addEventListener('mouseout', ()=> {
+    destinations.style.transition = '1s';
+    destinations.style.fontSize = '1.5rem';
+    destinations.style.color = 'gold';
+})
