@@ -75,3 +75,17 @@ destinations.addEventListener('mouseout', ()=> {
     destinations.style.fontSize = '1.5rem';
     destinations.style.color = 'gold';
 })
+
+// double click .btn EventListener
+const btn = document.querySelectorAll('.content-pick .destination .btn')
+    btn[0].addEventListener('dblclick', ()=>{
+        document.location.href = 'https://images.unsplash.com/photo-1542332606-b2d1c52a6c33?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80'
+    })
+    btn[1].addEventListener("dblclick", ()=>{
+        document.location.href = 'https://images.unsplash.com/photo-1553004377-62aa53df180f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1778&q=80';
+    });
+    btn[2].addEventListener('dblclick', ()=>{
+        document.location.href = 'https://images.unsplash.com/photo-1464122632645-bf5f12bbe202?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80';
+        event.preventDefault()
+    
+    });
