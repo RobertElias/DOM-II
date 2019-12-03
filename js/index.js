@@ -43,7 +43,7 @@ dragImg.addEventListener('drag', ()=> {
 })
 
 
-//OnWheel through mouse zoon in or out for .footer class
+//OnWheel through mouse zoon in or out for .footer class...
 function zoom(event){
     event.preventDefault();
     if(event.deltaY < 0) {
