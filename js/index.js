@@ -8,6 +8,7 @@ nav.addEventListener("mouseover", ()=>{
     nav.style.backgroundColor = "blue"; 
 })
 
+//Mouse out
 nav.addEventListener("mouseout", ()=>{
     nav.style.transition = "1.2s";
     nav.style.backgroundColor = "White";
@@ -32,4 +33,9 @@ document.addEventListener('click', ()=>{
 let dragImg = document.querySelector('.intro img');
 dragImg.addEventListener('drag', ()=> {
     dragImg.style.display = "none";
+})
+
+//Load on page EventListener
+window.addEventListener('load', ()=>{
+    alert("WELCOME ABOARD THE FUN BUS, HAVE A SEAT!!!");
 })
